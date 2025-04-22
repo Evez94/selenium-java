@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import part3_4.com.demoqa.base.BaseTest;
 
 public class RadioButtonTest extends BaseTest {
-
+ //checking radio button
     @Test
     public void testRadioButton(){
         var formsPage = homePage.goToForms().clickPracticeForm();
