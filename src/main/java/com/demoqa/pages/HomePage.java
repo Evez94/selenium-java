@@ -10,7 +10,7 @@ import static utilities.JavaScriptUtility.scrollToElementJS;
 public class HomePage extends BasePage {
 
     private  By formsCard = By.xpath("//div[@id='app']//h5[text() = 'Forms']");
-    private  By elementsCard = By.xpath("//duv[@id='app']//h5[text()='Elements']");
+    private  By elementsCard = By.xpath("//div[@id='app']//h5[text()='Elements']");
 
     public FormsPage goToForms(){
         scrollToElementJS(formsCard);
