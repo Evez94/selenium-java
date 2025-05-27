@@ -17,6 +17,7 @@ public class HomePage extends BasePage {
     private By alertsFrameWindowsCard = By.xpath("//div[@id='app']//h5[contains(text(),'Alerts')]");
 
 
+
     public FormsPage goToForms(){
         scrollToElementJS(formsCard);
         click(formsCard);

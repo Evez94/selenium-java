@@ -24,4 +24,24 @@ public class SwitchToUtility extends Utility{
     public static void setAlertText(String text){
         switchTo().alert().sendKeys(text);
     }
+
+    // switch To Frames Using Stiring
+    public static void  switchToFramesString(String value){
+        switchTo().frame(value);
+    }
+    public static void switchToDefaultContent(){
+        switchTo().defaultContent();
+    }
+
+    // switch To Frames Using Index
+    public static void switchToFramesIndex(int index){
+        switchTo().frame(index);
+    }
+
+    //
+    public static void switchToWindow(String handle){
+        switchTo().window(handle);
+    }
+
+
 }
