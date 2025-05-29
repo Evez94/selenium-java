@@ -15,4 +15,15 @@ public class DynamicWaitTest extends BaseTest {
         Assert.assertEquals(actualText,expectedText,
                 "Actual & Expected Text Do Not Match");
     }
+
+    @Test
+
+    public void testProgressBar(){
+        var progressPage = homePage.goToWidgets().clickProgressBarMenu();
+        progressPage.clickStartButton();
+        String actualValue =progressPage.progressBarValue();
+        String expectedValue = "100%";
+        Assert.assertEquals(actualValue,expectedValue,
+                "\n Actual & Expected Value Do Not Match \n");
+    }
 }
